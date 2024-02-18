@@ -7,17 +7,18 @@ import org.testng.annotations.Test;
 
 public class AlertsTest extends TestBase {
 
-@BeforeMethod
-  public void precondition(){
-  new HomePage(driver).getAlerts();
-}
+  @BeforeMethod
+  public void precondition() {
+    new HomePage(driver).getAlerts();
+  }
 
-@Test
-  public void acceptAlertTest(){
-  new AlertsPage(driver).acceptAlert();
-}
-@Test
-  public void acceptJsAlert(){
-  new AlertsPage(driver).acceptJsAlert();
-}
+  @Test
+  public void acceptAlertTest() {
+    new AlertsPage(driver).acceptAlert();
+  }
+
+  @Test
+  public void acceptJsAlert() {
+    new AlertsPage(driver).acceptJsAlert();
+  }
 }
