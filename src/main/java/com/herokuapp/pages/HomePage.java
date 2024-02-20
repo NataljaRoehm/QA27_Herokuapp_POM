@@ -22,16 +22,16 @@ public class HomePage extends BasePage {
       + "ul:nth-child(4) li:nth-child(11) > a:nth-child(1)")
   WebElement selectAnOption;
 
-  public DropdownListPage getDropdown() {
+  public SelectDropdownPage getSelectDropdown() {
     click(selectAnOption);
-    return new DropdownListPage(driver);
+    return new SelectDropdownPage(driver);
   }
 
   @FindBy(linkText = "Multiple Windows")
   WebElement clickMultiple;
 
-  public NewWindowPage getMultiple() {
+  public NewMultipleWindowPage getMultiple() {
     click(clickMultiple);
-    return new NewWindowPage(driver);
+    return new NewMultipleWindowPage(driver);
   }
 }
