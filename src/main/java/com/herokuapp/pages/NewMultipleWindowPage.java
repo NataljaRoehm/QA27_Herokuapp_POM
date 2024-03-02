@@ -23,9 +23,6 @@ public class NewMultipleWindowPage extends BasePage {
     return this;
   }
 
-  //public BrowserWindowPage verifyTextFromNewTab(String text) {
-  //    Assert.assertTrue(shouldHaveText(sampleHeading,text,10));
-  //    return this;
   @FindBy(xpath = "/html[1]/body[1]/div[1]/h3[1]")
   WebElement newWindow;
 

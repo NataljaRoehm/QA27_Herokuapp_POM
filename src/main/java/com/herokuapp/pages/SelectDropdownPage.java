@@ -11,7 +11,6 @@ public class SelectDropdownPage extends BasePage {
     super(driver);
   }
 
- // @FindBy(xpath = "//option[contains(text(),'Option 2')]")
   @FindBy(id = "dropdown")
   WebElement dropdownOption;
 
@@ -19,6 +18,5 @@ public class SelectDropdownPage extends BasePage {
     Select select = new Select(dropdownOption);
     select.selectByVisibleText(option);
     return this;
-    //click(dropdownOption);
   }
 }
